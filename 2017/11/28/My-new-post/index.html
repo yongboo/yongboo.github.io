@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Testing,Another Tag," />
 
 
 
@@ -95,13 +95,14 @@
 
 
 <meta name="description" content="记录改变">
+<meta name="keywords" content="Testing,Another Tag">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My new post">
 <meta property="og:url" content="http://yoursite.com/2017/11/28/My-new-post/index.html">
 <meta property="og:site_name" content="Yongbo&#39;s Blog">
 <meta property="og:description" content="记录改变">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-28T06:56:34.000Z">
+<meta property="og:updated_time" content="2017-11-29T09:34:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My new post">
 <meta name="twitter:description" content="记录改变">
@@ -210,22 +211,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
+            分类
           </a>
         </li>
       
@@ -312,6 +303,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Testing/" itemprop="url" rel="index">
+                    <span itemprop="name">Testing</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -364,6 +377,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Testing/" rel="tag"># Testing</a>
+          
+            <a href="/tags/Another-Tag/" rel="tag"># Another Tag</a>
+          
+        </div>
       
 
       
@@ -456,7 +477,7 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives/">
+              <a href="/">
                 <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
@@ -464,7 +485,25 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -624,7 +663,7 @@
   
 
     
-      <script id="dsq-count-scr" src="https://Yongbo.disqus.com/count.js" async></script>
+      <script id="dsq-count-scr" src="https://yongbo.disqus.com/count.js" async></script>
     
 
     
@@ -635,7 +674,7 @@
           this.page.title = 'My new post';
         };
         var d = document, s = d.createElement('script');
-        s.src = 'https://Yongbo.disqus.com/embed.js';
+        s.src = 'https://yongbo.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
       </script>
