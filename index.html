@@ -292,7 +292,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/28/My-new-post/" itemprop="url">My new post</a></h1>
+                <a class="post-title-link" href="/2017/11/28/My-new-post/" itemprop="url">es6上手实践</a></h1>
         
 
         <div class="post-meta">
@@ -327,8 +327,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Testing/" itemprop="url" rel="index">
-                    <span itemprop="name">Testing</span>
+                  <a href="/categories/es6/" itemprop="url" rel="index">
+                    <span itemprop="name">es6</span>
                   </a>
                 </span>
 
@@ -376,9 +376,16 @@
 
       
         
-          
-            
-          
+          <h2 id="1、解构赋值"><a href="#1、解构赋值" class="headerlink" title="1、解构赋值"></a>1、解构赋值</h2><h3 id="a、对象解构赋值"><a href="#a、对象解构赋值" class="headerlink" title="a、对象解构赋值"></a>a、对象解构赋值</h3><p>场景：从form表单抽取数据，同时对属性进行重命名和设置默认值<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    name: <span class="string">'xiaoming'</span>,</span><br><span class="line">    age: <span class="number">18</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">school</span>: paramName = <span class="string">'Peking univisty'</span> &#125; = person</span><br><span class="line"><span class="built_in">console</span>.log(&#123; paramName &#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="b、函数参数的解构赋值"><a href="#b、函数参数的解构赋值" class="headerlink" title="b、函数参数的解构赋值"></a>b、函数参数的解构赋值</h3><p>将函数参数设置成对象，并可设置参数默认值<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span> (<span class="params">&#123;x = <span class="number">0</span>, y = <span class="number">1</span>&#125; = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> [x, y]</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(fun())</span><br><span class="line"><span class="built_in">console</span>.log(fun(&#123;<span class="attr">x</span>: <span class="string">'a'</span>&#125;))</span><br><span class="line"><span class="built_in">console</span>.log(fun(&#123;<span class="attr">x</span>: <span class="string">'a'</span>, <span class="attr">y</span>: <span class="string">'b'</span>&#125;))</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fetch</span> (<span class="params">url, &#123;body = <span class="string">''</span>, method = <span class="string">'GET'</span>, headers = &#123;&#125;&#125; = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(method)</span><br><span class="line">&#125;</span><br><span class="line">fetch(<span class="string">'http://google.com'</span>, &#123;&#125;)</span><br><span class="line">fetch(<span class="string">'http://google.com'</span>)</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/28/My-new-post/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -508,6 +515,7 @@
         
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/11/27/hello-world/#more" rel="contents">
@@ -605,7 +613,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -616,7 +624,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -658,7 +666,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
